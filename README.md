@@ -1,2 +1,12 @@
-# expect_interact_practic
-This is a demo usage of expect
+#使用expect自动输入密码，免去手动交互
+
+###用途
+把指定路径的公钥拷贝自动拷贝到指定机器上。
+
+### 用法示例
+``` bash
+./auto-copy-key.sh admin vagrant 192.168.33.11
+```
+*说明：* 第一个参数是用户名，第二个参数是密码，第三个参数是目标机地址
+*注意：* `auto-copy-key.sh`中指定的key的路径必须是绝对路径，否则expect会找不到
+
